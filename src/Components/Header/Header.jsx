@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from "./header.module.css";
 
 import Logo from "../../assets/logo.svg";
@@ -12,9 +12,18 @@ import Icon3 from "../../assets/icon3.svg";
 const Header = () => {
 
   const [burger, setBurger] = useState(false);
+  const [fixed, setFixed] = useState(false);
+
+    window.addEventListener('scroll',() => {
+        if(window.scrollY > 120){
+            setFixed(true)
+        }else{
+            setFixed(false)
+        }
+    })
 
   return (
-    <header className={style.header}>
+    <header className={fixed ? `${style.header} ${style.fixed}` : style.header}>
         <div className={style.left}>
             <div className={style.burger}>
                 <div className={style.lines} onClick={() => {

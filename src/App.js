@@ -1,4 +1,4 @@
-import { Header, Section1 } from './Components';
+import { Header, Section1, Section2, Section3, Section4, Section5 } from './Components';
 import './global.css';
 
 function App() {
@@ -6,6 +6,10 @@ function App() {
     <>
       <Header />
       <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
     </>
   );
 }

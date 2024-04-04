@@ -5,6 +5,23 @@
     display: flex;
 }
 
+.fixed{
+    position: fixed;
+    top: 0;
+    z-index: 15165;
+    transform: translateY(-120%);
+    animation: 1s fromTop forwards;
+}
+
+@keyframes fromTop{
+    from{
+        transform: translateY(-120%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 .left{
     width: 40%;
     height: 100%;

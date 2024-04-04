@@ -1,0 +1,109 @@
+.section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parts{
+    width: 40%;
+    height: 60vh;
+}
+
+.part1{
+    background-image: url(../../assets/partLeftBack.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.part2{
+    background-color: #EEEEEE;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    gap: 20px;
+}
+
+@font-face {
+    font-family: fortuna;
+    src: url(../../fonts/FuturaCyrillicMedium.ttf);
+}
+
+.text1{
+    font-size: 45px;
+    color: #474A51;
+}
+
+.text2{
+    font-size: 16px;
+    color: #474A51;
+    width: 70%; 
+    font-family: fortuna;
+}
+
+.text3{
+    font-size: 18px;
+    color: #474A51;
+    font-family: fortuna;
+}
+
+.btn{
+    width: 180px;
+    height: 50px;
+    color: #474A51;
+    border: 1px solid #474A51;
+    background: none;
+    font-size: 18px;
+    font-family: fortuna;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 950px){
+    .section{
+        flex-direction: column;
+    }
+
+    .parts{
+        width: 95%;
+    }
+
+    .part2{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 15px;
+    }
+
+    .text2{
+        text-align: center;
+    }
+
+    .btn{
+        font-size: 20px;
+    }
+
+    .text1{
+        font-size: 50px;
+    }
+
+    .text2{
+        font-size: clamp(18px,4vw,22px);
+    }
+
+    .text3{
+        font-size: clamp(20px,4vw,24px);
+        text-align: center;
+    }
+
+    .btn{
+        width: 200px;
+        height: 55px;
+    }
+}
