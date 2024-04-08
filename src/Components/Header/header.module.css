@@ -51,6 +51,7 @@
 
 .logo{
     width: clamp(200px,350px,45%);
+    cursor: pointer;
 }
 
 @font-face {

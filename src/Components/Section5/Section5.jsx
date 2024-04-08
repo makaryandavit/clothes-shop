@@ -8,7 +8,7 @@ import Photo4 from "../../assets/box4Back.png"
 
 const Section5 = () => {
   return (
-    <div className={style.section}>
+    <div className={style.section} id='brende'>
         <p className={style.title}>НАШ ИНСТАГРАМ</p>
         <p className={style.instagram}>@loylen_brand</p>
         <div className={style.photos}>

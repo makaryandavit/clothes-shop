@@ -14,22 +14,22 @@ export const headerLinks = [
     {
         id: Math.random() * Math.random(),
         text: 'Каталог',
-        path: '',
+        path: '#katalog',
     },
     {
         id: Math.random() * Math.random(),
         text: 'LOOKBOOK',
-        path: '',
+        path: '#lookbook',
     },
     {
         id: Math.random() * Math.random(),
         text: 'О бренде',
-        path: '',    
+        path: '#brende',    
     },
     {
         id: Math.random() * Math.random(),
         text: 'информация',
-        path: '',
+        path: '#information',
     }
 ]
 
@@ -98,5 +98,28 @@ export const clothes = [
         title: 'Классические брюки',
         price: '5 000 ₽',
         oldPrice: '',
+    },
+]
+
+export const clothesSizes = [
+    {
+        id: Math.random() * Math.random(),
+        size: 40,
+    },
+    {
+        id: Math.random() * Math.random(),
+        size: 42,
+    },
+    {
+        id: Math.random() * Math.random(),
+        size: 44,
+    },
+    {
+        id: Math.random() * Math.random(),
+        size: 46,
+    },
+    {
+        id: Math.random() * Math.random(),
+        size: 48,
     },
 ]

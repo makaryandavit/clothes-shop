@@ -38,7 +38,7 @@ const Header = () => {
                         {
                             headerLinks.map(item => (
                                 <li key={item.id * Math.random()}>
-                                    <a href={item.path}>{item.text}</a>
+                                    <a href={item.path} onClick={() => setBurger(false)}>{item.text}</a>
                                 </li>
                             ))
                         }
@@ -49,14 +49,16 @@ const Header = () => {
                 {
                     headerLinks.map(item => (
                         <li key={item.id}>
-                            <a href={item.path} className={style.link}>{item.text}</a>
+                            <a href={item.path} className={style.link} onClick={() => setBurger(false)}>{item.text}</a>
                         </li>
                     ))
                 }
             </ul>
         </div>
         <div className={style.center}>
-            <img src={Logo} className={style.logo} alt="" />
+            <img src={Logo} className={style.logo} onClick={() => {
+                window.scrollTo(0,0)
+            }} alt="" />
         </div>
         <div className={style.right}>
             <ul className={style.rightNavigation}>

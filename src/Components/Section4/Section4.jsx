@@ -3,7 +3,7 @@ import style from "./section4.module.css";
 
 const Section4 = () => {
   return (
-    <div className={style.section}>
+    <div className={style.section} id='lookbook'>
         <div className={`${style.parts} ${style.part1}`}></div>
         <div className={`${style.parts} ${style.part2}`}>
             <p className={style.text1}>LOOKBOOK</p>
